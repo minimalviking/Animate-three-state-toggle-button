@@ -61,17 +61,17 @@ public class AnimatedThreeStateToggleButton extends TextView {
 	private void init(AttributeSet attrs) {
 		TypedArray a = getContext().obtainStyledAttributes(attrs, R.styleable.atstb, 0, 0);
 
-		bgColor0 = a.getColor(R.styleable.atstb_color_bg0, Color.GREEN);
-		bgColor1 = a.getColor(R.styleable.atstb_color_bg1, Color.BLUE);
-		bgColor2 = a.getColor(R.styleable.atstb_color_bg2, Color.RED);
+		bgColor0 = a.getColor(R.styleable.atstb_color_bg0, Color.TRANSPARENT);
+		bgColor1 = a.getColor(R.styleable.atstb_color_bg1, Color.TRANSPARENT);
+		bgColor2 = a.getColor(R.styleable.atstb_color_bg2, Color.TRANSPARENT);
 
 		borderColor0 = a.getColor(R.styleable.atstb_color_border0, Color.TRANSPARENT);
 		borderColor1 = a.getColor(R.styleable.atstb_color_border1, Color.TRANSPARENT);
 		borderColor2 = a.getColor(R.styleable.atstb_color_border2, Color.TRANSPARENT);
 
-		textColor0 = a.getColor(R.styleable.atstb_color_text0, Color.RED);
-		textColor1 = a.getColor(R.styleable.atstb_color_text1, Color.GREEN);
-		textColor2 = a.getColor(R.styleable.atstb_color_text2, Color.BLUE);
+		textColor0 = a.getColor(R.styleable.atstb_color_text0, Color.BLACK);
+		textColor1 = a.getColor(R.styleable.atstb_color_text1, Color.BLACK);
+		textColor2 = a.getColor(R.styleable.atstb_color_text2, Color.BLACK);
 
 		text0 = a.getString(R.styleable.atstb_text0);
 		text1 = a.getString(R.styleable.atstb_text1);
