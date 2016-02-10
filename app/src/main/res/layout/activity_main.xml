@@ -25,7 +25,7 @@
 		android:textColor="@android:color/white"
 		android:textSize="20dp"
 		custom:animation_length="450"
-		custom:border_width="5"
+		custom:border_width="1"
 		custom:color_bg0="@android:color/white"
 		custom:color_bg1="#3955A8"
 		custom:color_bg2="#21D381"

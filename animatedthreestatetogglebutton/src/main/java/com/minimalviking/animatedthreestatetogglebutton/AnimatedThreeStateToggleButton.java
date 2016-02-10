@@ -79,9 +79,10 @@ public class AnimatedThreeStateToggleButton extends TextView {
 
 		cornerRadius = dpToPx(a.getInteger(R.styleable.atstb_corner_radius, 0), getContext());
 
-		borderWidth = a.getInt(R.styleable.atstb_border_width, -1);
-		if (borderWidth != -1) {
+		borderWidth = a.getInt(R.styleable.atstb_border_width, 0);
+		if (borderWidth != 0) {
 			borderPaint.setStyle(Paint.Style.STROKE);
+			borderWidth = dpToPx(borderWidth, getContext());
 			borderPaint.setStrokeWidth(borderWidth);
 		}
 		setState(0);
@@ -175,7 +176,7 @@ public class AnimatedThreeStateToggleButton extends TextView {
 		}
 
 		canvas.drawRoundRect(new RectF(0, 0, canvas.getWidth(), canvas.getHeight()), cornerRadius, cornerRadius, bgPaint);
-		canvas.drawRoundRect(new RectF(0+borderWidth/2, 0 + borderWidth/2, canvas.getWidth()- borderWidth/2, canvas.getHeight() - borderWidth/2), cornerRadius, cornerRadius, borderPaint);
+		canvas.drawRoundRect(new RectF(borderWidth/2, borderWidth/2, canvas.getWidth()- borderWidth/2, canvas.getHeight() - borderWidth/2), cornerRadius, cornerRadius, borderPaint);
 		setTextColor(textColor);
 
 		super.onDraw(canvas);
