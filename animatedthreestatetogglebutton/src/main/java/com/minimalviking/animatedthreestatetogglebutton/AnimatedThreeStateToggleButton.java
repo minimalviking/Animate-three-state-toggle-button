@@ -82,7 +82,7 @@ public class AnimatedThreeStateToggleButton extends TextView {
 		borderWidth = a.getInt(R.styleable.atstb_border_width, -1);
 		if (borderWidth != -1) {
 			borderPaint.setStyle(Paint.Style.STROKE);
-			borderPaint.setStrokeWidth(borderWidth);
+			borderPaint.setStrokeWidth(dpToPx(borderWidth, getContext()));
 		}
 		setState(0);
 
