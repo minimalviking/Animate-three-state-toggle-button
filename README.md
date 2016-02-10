@@ -1,6 +1,6 @@
 # Animated three state toggle button
 
-![](http://i.imgur.com/ScRsR9b.gif)
+![](http://i.imgur.com/CfS6fCp.gif)
 
 A button with 3 states, each state can have custom:
 * text
